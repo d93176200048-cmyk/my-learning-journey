@@ -1,0 +1,11 @@
+留言=open("我的20岁.txt",'w')
+留言.write("提升自己""提高认知\n")
+留言.write("提升执行力努力学习aiweb3英语\n")
+留言.close()
+留言=open("我的20岁.txt","r")
+内容=留言.read()
+print(内容)
+留言=open("我的20岁.txt","a")
+留言.write("小ego大体验\n")
+留言.close()
+
