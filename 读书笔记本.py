@@ -31,7 +31,7 @@ def 复核():
     for 行 in 所有行:
         if 行.count(":") < 2:
             continue
-        标题,正文,旧指纹 = 行.split(":")
+        标题,正文,旧指纹 = 行.split(":") 
         指纹2=hashlib.sha256(正文.encode("utf-8")).hexdigest()
         if 指纹2 == 旧指纹:
             print("没动")
